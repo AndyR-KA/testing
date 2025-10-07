@@ -29,6 +29,7 @@ jobs:
       - name: Archive infra folder
         run: |
           mkdir -p artifact
+          ls
           cp -r devops/infra artifact/
 
       - name: Upload infra artifact
