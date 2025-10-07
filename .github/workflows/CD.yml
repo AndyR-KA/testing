@@ -25,7 +25,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/download-artifact@v4
         with:
-          name: infra
           run-id: ${{ github.event.workflow_run.id }}
       # Runs a single command using the runners shell
       - name: Run a one-line script
