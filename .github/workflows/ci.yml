@@ -30,7 +30,7 @@ jobs:
         run: |
           mkdir -p artifact
           ls /home/runner/work/testing/testing
-          cp -r devops/infra artifact/
+          cp -r $GITHUB_WORKSPACE/devops/infra artifact/
 
       - name: Upload infra artifact
         uses: actions/upload-artifact@v4
