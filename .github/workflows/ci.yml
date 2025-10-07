@@ -29,8 +29,12 @@ jobs:
       - name: Archive infra folder
         run: |
           mkdir -p artifact
+      - name: list
+        run: |
           cd $GITHUB_WORKSPACE
           ls
+      - name: copy
+        run: |
           cp -r $GITHUB_WORKSPACE/devops/infra artifact/
 
       - name: Upload infra artifact
