@@ -28,7 +28,6 @@ jobs:
       # Runs a single command using the runners shell
 
       - name: Upload infra artifact
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v4
         with:
-          name: infra
           path: $GITHUB_WORKSPACE/devops/infra
